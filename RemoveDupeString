@@ -1,0 +1,13 @@
+import java.util.LinkedHashSet;
+
+public class RemoveStringsDupe {
+    public static void main(String[] args) {
+        String str = "I love love india india india";
+        String[] arr = str.split(" ");
+        LinkedHashSet lh = new LinkedHashSet();
+        for(int i=0;i<arr.length;i++){
+            lh.add(arr[i]);
+        }
+        lh.forEach(x->System.out.print(x+" "));
+    }
+}
